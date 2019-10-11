@@ -1,0 +1,66 @@
+.tbl {
+  display: block;
+  overflow-x: auto;
+  margin: 0 auto;
+  width: 90vw;
+  align-items: center;
+  font-size: 0.9em;
+}
+.tbl table {
+  width: 100%;
+  color: #000;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid #ddd;
+  border-collapse: collapse;
+}
+.tbl thead {
+  display: block;
+  font-weight: bold;
+}
+.tbl tr {
+  border-bottom: 1px solid #ddd;
+}
+.tbl tbody tr:last-of-type {
+  border-bottom: 2px solid #555;
+}
+.tbl th,
+.tbl td {
+  min-width: 100px;
+  width: 1%;
+  padding: 12px 15px;
+  text-align: left;
+}
+.tbl th:first-child,
+.tbl td:first-child {
+  text-align: left;
+}
+
+.tbl th {
+  position: fixed;
+  position: sticky;
+  top: 0;
+  color: rgb(255, 94, 0);
+  background-color: rgb(230, 230, 230);
+}
+.tbl tr:nth-child(even) {
+  color: rgb(85, 85, 85);
+  background-color: #f2f2f2;
+}
+.tbl tr:hover,
+.tbl tr:nth-child(even):hover {
+  background-color: rgba(0, 83, 192, 0.2);
+}
+.tbl tbody {
+  display: block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 400px;
+  width: 100%;
+}
+.tbl-upper thead {
+  text-transform: uppercase;
+}
+.tbl-auto tbody {
+  height: auto;
+}
